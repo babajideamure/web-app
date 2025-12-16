@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Tigernut Juice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <h1>Jay's Tigernut Juice</h1>
+            <button class="cart-btn" onclick="openCart()">
+                🛒 Cart <span class="cart-count" id="cartCount">0</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Premium TigerNut Drink</h2>
+            <p>100% Natural • Refreshing • Nutritious</p>
+            <div class="hero-image">
+                <img src="image_path.jpg" alt="image of tiger nut">
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <h3>Why Choose Jay's Tigernut Juice?</h3>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">💪</div>
+                <h4>Nutrient-Rich</h4>
+                <p>Naturally rich in fiber, minerals & healthy fats</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">❤️</div>
+                <h4>Heart-Friendly</h4>
+                <p>Promotes cardiovascular health naturally</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🌿</div>
+                <h4>100% Natural</h4>
+                <p>No refined sugar, preservatives or additives</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">⚡</div>
+                <h4>Steady Energy</h4>
+                <p>Sustained energy without crashes</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🔥</div>
+                <h4>Warming Spices</h4>
+                <p>Infused with ginger, turmeric & cloves for digestion</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🥥</div>
+                <h4>Creamy & Naturally Sweet</h4>
+                <p>Sweetened with dates and enriched with coconut</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section class="ingredients">
+        <h3>Nature's Finest Blend</h3>
+        <div class="ingredients-list">
+            <div class="ingredient">
+                <h4>Tiger Nuts & Dates</h4>
+                <p>Nutty, naturally sweet, and packed with nutrients</p>
+            </div>
+            <div class="ingredient">
+                <h4>Ginger & Turmeric</h4>
+                <p>Warm, aromatic spices known for wellness benefits</p>
+            </div>
+            <div class="ingredient">
+                <h4>Coconut</h4>
+                <p>Pure and creamy for smooth texture and flavor</p>
+            </div>
+            <div class="ingredient">
+                <h4>Cinnamon & Black Pepper</h4>
+                <p>A subtle, spicy kick for taste and natural vitality</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="order">
+        <h3>Order Now</h3>
+        <div class="product-card">
+            <div class="product-image">
+                📸 Kunu Aya Bottle Image
+            </div>
+            <div class="product-info">
+                <h4>Jay's TigerNut - 500ml</h4>
+                <div class="price">₦2,000</div>
+                <div class="quantity-selector">
+                    <button class="qty-btn" onclick="decreaseQty()">−</button>
+                    <span class="quantity" id="quantity">1</span>
+                    <button class="qty-btn" onclick="increaseQty()">+</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Your Cart</h3>
+                <button class="close-btn" onclick="closeCart()">&times;</button>
+            </div>
+            <div id="cartContent">
+                <!-- Cart content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="javascript:void(0)" onclick="contactWhatsApp()" class="whatsapp-float" title="Chat with us on WhatsApp">
+        💬
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Jay's TigerNut Juice. All rights reserved.</p>
+        <p>Fresh, Natural, Delicious</p>
+        <p style="margin-top: 1rem;">
+            📞 WhatsApp: <a href="https://wa.me/2349097009700" style="color: var(--yellow);">+234 909 700 9700</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
