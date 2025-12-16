@@ -478,6 +478,31 @@ section h3 {
     color: var(--gray);
 }
 
+/* Logo Section in Nav */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.nav-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .nav-logo {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .logo-section h1 {
+        font-size: 1.2rem;
+    }
+}
+
 /* WhatsApp Floating Button */
 .whatsapp-float {
     position: fixed;

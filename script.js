@@ -302,7 +302,7 @@ function processCheckout(event) {
     // Flutterwave Payment
     FlutterwaveCheckout({
         public_key: "FLWPUBK_TEST-XXXXX", // Replace with your Flutterwave public key
-        tx_ref: "KUNU-" + Date.now(),
+        tx_ref: "JAYTIGNUT-" + Date.now(),
         amount: cart.total,
         currency: "NGN",
         payment_options: "card,banktransfer,ussd",
@@ -312,7 +312,7 @@ function processCheckout(event) {
             name: name,
         },
         customizations: {
-            title: "Kunu Aya Order",
+            title: "Jay's TigerNut Juice",
             description: `${cart.quantity} bottle(s) - Delivery to ${DELIVERY_ZONES[zone].name}`,
             logo: "https://your-logo-url.com/logo.png",
         },
